@@ -1,0 +1,129 @@
+@media screen and (max-device-width: 850px) {
+    header {
+        justify-content: center;
+        flex-direction: column;
+    }
+    header .header-title {
+        width: 250px;
+        margin: 10px 0 0 0 ;
+    }
+
+    header > nav > ul {
+        padding: 0;
+        margin: 0 0 2em 0;
+    }
+
+    header > nav > ul > li {
+        margin-right: 12px;
+    }
+
+    main {
+        margin-bottom: 0;
+    }
+    main .container {
+        width: 90%;
+        border-radius: 15px;
+    }
+
+    main .container .container__image {
+        margin: 1em 0 1em 0;
+        width: 90%;
+    }
+    main .container .container__image > img {
+        border-radius: 15px;
+    }
+
+    main .container .container__title {
+        width: 90%;
+        margin: 0;
+    }
+
+    main .container .container__title .sneaker__title {
+        font-size: 32px;
+    }
+
+    main .container .container__subtitle {
+        width: 90%;
+    }
+
+    main .container .container__subtitle .sneaker__subtitle {
+        font-size: 20px;
+    }
+
+    main .container .container__info {
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3em;
+    }
+
+    main .container .container__info .container__description {
+        width: 100%;
+    }
+
+    main .container .container__info .container__description > p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    main .container .container__price {
+        width: 100%;
+    }
+
+    main .container .container__price .sneaker__overall {
+        font-size: 24px;
+    }
+
+    main .container .container__price .sneaker__releasedate > p {
+        font-size: 16px;
+    }
+
+    main .container .container__price .sneaker__price > p {
+        font-size: 16px;
+    }
+
+    main .container .container__price .sneaker__material > p {
+        font-size: 16px;
+    }
+
+    main .suggestion__title {
+        width: 90%;
+        margin-top: 2em;
+    }
+    main .suggestion__title > h1 {
+        font-size: 32px;
+    }
+
+    main .suggestion__container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+
+    main .suggestion__container .suggestion__card {
+        width: 90%;
+        margin: 0 0 1em 0;
+    }
+
+    footer .footer-container {
+        width: 80%;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    footer .footer-container .footer-title {
+        width: 325px;
+        margin: 1em 1em 0 1em;
+    }
+
+    footer .footer-container > nav > ul {
+        padding: 0;
+        margin: 0 0 1.5em 0;
+    }
+
+    footer .footer-container > nav > ul > li {
+        margin-right: 12px;
+    }
+}

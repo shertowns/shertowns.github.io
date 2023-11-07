@@ -1,0 +1,277 @@
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url(/fonts/AnonymousPro-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url(/fonts/AnonymousPro-Regular.ttf);
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url(/fonts/IBMPlexMono-Medium.ttf);
+  font-weight: 700;
+}
+
+li {
+  display: inline;
+  margin-right: 24px;
+}
+
+a {
+  color: black;
+  font: 700 20px "Anonymous Pro", sans-serif;
+  text-decoration: none;
+}
+
+h1 {
+  color: black;
+  font: 700 56px "Anonymous Pro", sans-serif;
+}
+
+h2 {
+  color: black;
+  font: 700 48px "Anonymous Pro", sans-serif;
+}
+
+h3 {
+  color: black;
+  font: 700 26px "Anonymous Pro", sans-serif;
+}
+
+p {
+  color: black;
+  font: 400 20px "Anonymous Pro", sans-serif;
+}
+
+img {
+  border-radius: 10px;
+  height: 55%;
+	width: 100%;
+}
+
+/* begin */
+
+html {
+  background: #F1F1F1;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: white;
+  border: 1px gray;
+  border-style: none none solid none;
+}
+
+header .header-title {
+  width: 300px;
+  height: 100px;
+  margin: 1em;
+}
+
+header .header-links {
+  color: black
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2.5em 0 2.5em 0;
+}
+
+main .container {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 50px;
+}
+
+main .container .container__image {
+  margin: 2.5em 2.5em 0 2.5em;
+  width: 95%;
+}
+
+main .container .container__image > img {
+  border-radius: 50px;
+  height: 100%;
+	width: 100%;
+}
+
+main .container .container__title {
+  width: 95%;
+}
+
+main .container .container__title .sneaker__title {
+  font: 400 48px "Anonymous Pro", sans-serif;
+  margin: 0.5em 0 0.5em 0;
+}
+
+main .container .container__subtitle {
+  width: 95%;
+}
+
+main .container .container__subtitle .sneaker__subtitle {
+  font: 400 36px "Anonymous Pro", sans-serif;
+  margin: 0 0 0.5em 0;
+}
+
+main .container__info {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5em;
+}
+
+main .container__info .container__description {
+  width: 49%;
+}
+
+main .container__info .container__description > p {
+  font: 400 20px "Anonymous Pro", sans-serif;
+  line-height: 26px;
+}
+
+main .container__info .container__price {
+  width: 49%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(4, 10%);
+}
+
+.container__price .sneaker__overall {
+  grid-area: 1 / 1 / 1 / 1;
+  font: 400 30px "Anonymous Pro", sans-serif;
+  text-align: left;
+}
+
+.container__price .sneaker__releasedate {
+  grid-area: 2 / 1 / 2 / 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px black;
+  border-style: solid none none none;
+}
+
+.container__price .sneaker__releasedate > p {
+  font: 400 20px "Anonymous Pro", sans-serif;
+}
+
+.container__price .sneaker__price {
+  grid-area: 3 / 1 / 3 / 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px black;
+  border-style: solid none;
+}
+
+.container__price .sneaker__price > p {
+  font: 400 20px "Anonymous Pro", sans-serif;
+}
+
+.container__price .sneaker__material {
+  grid-area: 4 / 1 / 4 / 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px black;
+  border-style: none none solid none;
+}
+
+.container__price .sneaker__material > p {
+  font: 400 20px "Anonymous Pro", sans-serif;
+}
+
+main .suggestion__title {
+  width: 70%;
+}
+main .suggestion__title > h1 {
+  font: 700 48px "Anonymous Pro", sans-serif;
+  text-align: left;
+}
+
+main .suggestion__container {
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 70%;
+  margin-bottom: 2em;
+}
+
+main .suggestion__container .suggestion__card  {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 370px;
+  height: fit-content;
+  margin-right: 15px;
+  border-radius: 10px;
+  padding: 15px;
+  background: white;
+  transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+}
+
+main .suggestion__container .suggestion__card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.suggestion__card .card__image {
+  margin: 0 0 20px 0;
+}
+.suggestion__card .card__title {
+  margin: 0 0 0 0;
+}
+
+.suggestion__card .card__text {
+  font: 400 20px "Anonymous Pro", sans-serif;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #121723;
+}
+
+.footer-container {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #121723;
+  border: 1px darkgray;
+  border-style: none none solid none;
+}
+
+.footer-title {
+  width: 300px;
+  height: 50px;
+  margin: 1em;
+}
+
+.footer-links {
+  color:white
+}
+
+.footer-copyright {
+  color: darkgray;
+  font-size: 16px;
+  font-weight: 700;
+}

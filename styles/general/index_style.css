@@ -1,0 +1,174 @@
+@font-face {
+    font-family: "Anonymous Pro";
+    src: url(/fonts/AnonymousPro-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url(/fonts/AnonymousPro-Regular.ttf);
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url(/fonts/IBMPlexMono-Medium.ttf);
+  font-weight: 700;
+}
+
+li {
+  display: inline;
+  margin-right: 24px;
+}
+
+a {
+  color: black;
+  font: 700 20px "Anonymous Pro", sans-serif;
+  text-decoration: none;
+}
+
+h1 {
+  color: black;
+  font: 700 56px "Anonymous Pro", sans-serif;
+}
+
+h2 {
+  color: black;
+  font: 700 48px "Anonymous Pro", sans-serif;
+}
+
+h3 {
+  color: black;
+  font: 700 26px "Anonymous Pro", sans-serif;
+}
+
+p {
+  color: black;
+  font: 400 20px "Anonymous Pro", sans-serif;
+}
+
+img {
+  border-radius: 10px;
+  height: 240px;
+	width: 370px;
+}
+
+/* begin */
+
+html {
+  background: #F1F1F1;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: white;
+  border: 1px gray;
+  border-style: none none solid none;
+}
+
+header .header-title {
+  width: 300px;
+  height: 100px;
+  margin: 1em;
+}
+
+header .header-links {
+  color: black
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main .subtitle-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 70%;
+}
+
+main .subtitle {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 500;
+  margin: 0.25em 0 0.25em 1em
+}
+
+main .cards-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 70%;
+  margin-bottom: 5em;
+}
+
+main .cards-container .container__link {
+  text-decoration: none;
+}
+
+main .cards-container .container {
+	display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 370px;
+	margin: 15px;
+  border-radius: 10px;
+  padding: 15px;
+  background: white;
+  transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+}
+
+main .cards-container .container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+main .cards-container .container .container__image {
+  margin: 0 0 20px 0
+}
+
+main .cards-container .container .container__title {
+  margin: 0 0 0 0
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #121723;
+}
+
+.footer-container {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #121723;
+  border: 1px darkgray;
+  border-style: none none solid none;
+}
+
+.footer-title {
+  width: 300px;
+  height: 50px;
+  margin: 1em;
+}
+
+.footer-links {
+  color:white
+}
+
+.footer-copyright {
+  color: darkgray;
+  font-size: 16px;
+  font-weight: 700;
+}
