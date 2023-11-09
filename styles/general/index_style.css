@@ -21,28 +21,28 @@ li {
 }
 
 a {
-  color: black;
+  color: #121723;
   font: 700 20px "Anonymous Pro", sans-serif;
   text-decoration: none;
 }
 
 h1 {
-  color: black;
+  color: #121723;
   font: 700 56px "Anonymous Pro", sans-serif;
 }
 
 h2 {
-  color: black;
+  color: #121723;
   font: 700 48px "Anonymous Pro", sans-serif;
 }
 
 h3 {
-  color: black;
+  color: #121723;
   font: 700 26px "Anonymous Pro", sans-serif;
 }
 
 p {
-  color: black;
+  color: #121723;
   font: 400 20px "Anonymous Pro", sans-serif;
 }
 
@@ -78,7 +78,7 @@ header .header-title {
 }
 
 header .header-links {
-  color: black
+  color: #121723;
 }
 
 main {
@@ -137,6 +137,10 @@ main .cards-container .container .container__image {
 
 main .cards-container .container .container__title {
   margin: 0 0 0 0
+}
+
+main .cards-container .container .container__text {
+  width: 80%;
 }
 
 footer {

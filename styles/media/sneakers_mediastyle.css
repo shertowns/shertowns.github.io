@@ -1,4 +1,4 @@
-@media screen and (max-device-width: 850px) {
+@media screen and (max-device-width: 768px) {
     header {
         justify-content: center;
         flex-direction: column;
