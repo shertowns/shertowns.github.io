@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { base } from "$app/paths";
     import Navbar from "$lib/components/Navbar.svelte";
 </script>
 
@@ -60,6 +61,6 @@
         </a>
     </p>
 </article>
-<a href="/" class="flex items-center justify-center w-[85%] md:w-[50%] h-16 mx-auto m-8 bg-secondary rounded-md align-middle text-center text-text text-xl font-bold font-jetbrains transition-all hover:bg-accent hover:text-secondary">
+<a href="{base}/" class="flex items-center justify-center w-[85%] md:w-[50%] h-16 mx-auto m-8 bg-secondary rounded-md align-middle text-center text-text text-xl font-bold font-jetbrains transition-all hover:bg-accent hover:text-secondary">
     Вернуться на главную
 </a>

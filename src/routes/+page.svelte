@@ -1,6 +1,7 @@
 <script lang="ts">
     import Navbar from "$lib/components/Navbar.svelte";
-
+    import { base } from "$app/paths"
+    
     type ArticleData = {
         id: number
         pageLink: string
@@ -64,7 +65,7 @@
 
 {#snippet articleCard(articleData: ArticleData)}
     {#if articleData != undefined}
-    <a id={`article${articleData.id}`} href="{articleData.pageLink}" class="animate-fade-in-scale flex flex-col w-[49%] h-60 bg-secondary rounded-md overflow-hidden cursor-pointer transition-all group hover:bg-accent">
+    <a id={`article${articleData.id}`} href={`${base}${articleData.pageLink}`} class="animate-fade-in-scale flex flex-col w-[49%] h-60 bg-secondary rounded-md overflow-hidden cursor-pointer transition-all group hover:bg-accent">
         {#await import(`$lib/images/${articleData.id}/preview.jpg`) then { default: image } }
             <img class="w-full h-[70%] m-auto mask-b-from-60% mask-b-to-100%" src={image} alt="картинка">
         {/await}
